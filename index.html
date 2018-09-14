@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="Gear.js"></script>
+    <script src="index.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Clock</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .slidecontainer {
+            width: 100%;
+        }
+
+        .slider {
+            -webkit-appearance: none;
+            width: 170px;
+            height: 10px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+        div.slidecontainer {
+            position: absolute;
+            top: 40px;
+            left: 320px;
+            width: 200px;
+            height: 100px;
+        }
+        div.slidecontainer2 {
+            position: absolute;
+            top: 120px;
+            left: 320px;
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="speedRange">
+    </div>
+    <div class="slidecontainer2">
+            <input type="range" min="1" max="100" value="50" class="slider" id="colorRange">
+        </div>
+    <canvas id="myCanvas" width="500" height="500">
+        Your browser does not support the canvas element.
+    </canvas>
+</body>
+
+
+</html>
